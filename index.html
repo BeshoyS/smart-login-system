@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login | Beshoo.Dev</title>
+</head>
+<body>
+
+    <div class="container text-center w-60 shadow-lg border border-1 p-5 mt-5">
+        <h1 class="pb-3">Smart Login System</h1>
+        <input type="email" id="emailInput" onkeyup="loginValidate();" class="form-control w-100 my-3" placeholder="Enter Your Email">
+        <input type="password" id="passInput" onkeyup="loginValidate();" class="form-control w-100 my-3" placeholder="Enter Your Password">
+        <p id="wrongMsg" class="my-2 text-danger d-none">Wrong email or password</p>
+        <button type="submit" id="loginBtn" onclick="login();" class="btn btn-outline-info w-100 mt-4"><a class="text-decoration-none">Login</a></button>
+        <p class="my-3">Don’t have an account? <a href="signup.html" class="text-decoration-none">Sign Up</a></p>
+    </div>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
